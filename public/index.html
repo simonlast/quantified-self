@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="/styles/style.css"/>
+    <link rel="shortcut icon" href="http://www.gravatar.com/avatar/3b964d84fcfbcdf59089c8bd7309f0b7.ico" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=.9, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <script type="text/javascript">
+        var Keen=Keen||{configure:function(e){this._cf=e},addEvent:function(e,t,n,i){this._eq=this._eq||[],this._eq.push([e,t,n,i])},setGlobalProperties:function(e){this._gp=e},onChartsReady:function(e){this._ocrq=this._ocrq||[],this._ocrq.push(e)}};(function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src=("https:"==document.location.protocol?"https://":"http://")+"dc8na2hxrj29i.cloudfront.net/code/keen-2.1.0-min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+
+        // Configure the Keen object with your Project ID and (optional) access keys.
+        Keen.configure({
+            projectId: "5349aa0573f4bb3193000004",
+            writeKey: "e7e296ce28cb84233d791e662ba3b59afe83068cbb7e4f8b8be11ae306579f3fa226a6f45551bbc03c32dff677b1516fc590af565747afd968d9f5d2af77c02e94dfcbf089d664efac3259bc9524e8784836685e186dd19f3cad095945b2bd4638caa2449e4ca8ca123bfc0109b2aabe", // required for sending events
+            readKey: "b24578baadbb35d5dacadf5f09bb534a44e1d53272b8ee3c3465f7e5d23478472b0099d6929b42cc704dc579a4b9d53aa2cb1b63a941ee1ed34deba0dd0ae8d2177559e5e3026c82b6a6f36f52eb57733fe1478c488005bd92dbfd412d04feea2ef9f2ec17973b8718a34634ddb874cb"    // required for doing analysis
+        });
+    </script>
+  </head>
+  <body>
+
+    <div class="track-button" data-event-name="glass_of_water" data-collection="life">
+      <h1 class="label">glass of water</h1>
+
+      <div class="attributes">
+      </div>
+    </div>
+
+    <div class="track-button" data-event-name="cup_of_tea" data-collection="life">
+      <h1 class="label">cup of tea</h1>
+
+      <div class="attributes">
+      </div>
+    </div>
+
+    <div class="track-button" data-event-name="sleep" data-collection="life">
+      <h1 class="label">sleep</h1>
+
+      <div class="attributes">
+        <tracking-field data-type="number" data-name="hours"></tracking-field>
+      </div>
+    </div>
+
+    <div class="track-button" data-event-name="programming" data-collection="life">
+      <h1 class="label">programming</h1>
+
+      <div class="attributes">
+        <tracking-field data-type="number" data-name="minutes"></tracking-field>
+      </div>
+    </div>
+
+    <div class="track-button" data-event-name="read" data-collection="life">
+      <h1 class="label">read</h1>
+
+      <div class="attributes">
+        <tracking-field data-type="number" data-name="minutes"></tracking-field>
+        <tracking-field data-type="string" data-name="what"></tracking-field>
+      </div>
+    </div>
+
+    <div class="track-button" data-event-name="meeting" data-collection="life">
+      <h1 class="label">meeting</h1>
+
+      <div class="attributes">
+        <tracking-field data-type="number" data-name="minutes"></tracking-field>
+      </div>
+    </div>
+
+    <div class="track-button" data-event-name="excersize" data-collection="life">
+      <h1 class="label">excersize</h1>
+
+      <div class="attributes">
+        <tracking-field data-type="number" data-name="minutes"></tracking-field>
+        <tracking-field data-type="string" data-name="type" data-hint="swim, bike, run, walk"></tracking-field>
+      </div>
+    </div>
+
+    <div class="loading-indicator">
+      <img src="/assets/loading.gif">
+    </div>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/build.js"></script>
+  </body>
+</html>

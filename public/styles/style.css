@@ -1,0 +1,50 @@
+.noselect {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #27ae60;
+  font-family: 'Helvetica Light', 'Helvetica';
+  font-weight: lighter;
+  color: white;
+  margin: 0;
+  padding: 16px;
+}
+.track-button {
+  display: block;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #1d9650;
+  width: 100%;
+  cursor: pointer;
+}
+.label {
+  font-weight: lighter;
+  text-align: center;
+}
+.loading-indicator {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+.loading-indicator img {
+  position: absolute;
+  top: 50%;
+}
+body[data-state='loading'] .loading-indicator {
+  opacity: 1;
+}
